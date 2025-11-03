@@ -1,0 +1,322 @@
+/* General */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header ocupa 10% del alto de la página */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+/* Estilos para el menú de navegación (si tienes uno) */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main ocupa el 80% del alto de la página */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px; /* Añadido para evitar que el contenido toque los bordes */
+}
+
+/* Sección héroe centrada con fondo completo */
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover; /* Para asegurarse de que la imagen ocupe todo el espacio */
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que ocupe todo el espacio vertical disponible */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier padding */
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    width: calc(100% - 20px); /* 100% del ancho menos un margen de 10% */
+    max-width: calc(600px + 10%); /* Ancho máximo aumentado en 10% */
+    height: calc(100% - 20px); /* 100% de la altura menos un margen de 10% */
+    max-height: calc(80vh + 10%); /* Altura máxima aumentada en 10% de la vista */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    text-align: left; /* Alineación de texto */
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Elimina márgenes laterales */
+    height: 100%; /* Ocupa todo el alto */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+    background-color: transparent; /* Asegura que no haya fondo alrededor del formulario */
+}
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer ocupa 10% del alto de la página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Estilos para los botones del menú de usuario */
+.button-list {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los botones */
+    align-items: center;
+}
+
+.button-list li {
+    margin: 10px 0;
+}
+
+.button-list a.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #333; /* Color de fondo del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.button-list a.button:hover {
+    background-color: #555; /* Color cuando el usuario pasa el cursor */
+}
+
+.button-list a.button:active {
+    background-color: #222; /* Color cuando el botón está activo */
+}
+
+/* Para centrar las opciones en el main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    margin-top: 20px; /* Espaciado superior para separar los botones de la caja */
+    display: flex; /* Para alinear los botones en una fila */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.movie-info {
+    color: #333; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco pero 80% opaco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.btn {
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.btn:hover {
+    background-color: #555; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Asegúrate de que no haya margen o padding en el formulario */
+form {
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
+}
+
+/*items*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Establecer la fuente */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+.hero {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: auto; /* Cambiar a auto para ajustarse al contenido */
+    background-color: rgba(0, 0, 0, 0.05); /* Fondo gris claro para el héroe */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    width: 90%; /* Cambia el ancho de la tabla (ajusta según sea necesario) */
+    max-width: 600px; /* Ancho máximo para mantener la tabla más pequeña */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Hacer la tabla del 100% del ancho del contenedor */
+    border-collapse: collapse; /* Colapsar bordes */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordes de celdas */
+    padding: 8px; /* Espaciado dentro de celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Cambiar el color del texto a negro */
+td, th {
+    color: black; /* Texto negro para las celdas */
+}
+
+/* Estilos para encabezados */
+th {
+    background-color: #f2f2f2; /* Color de fondo gris para encabezados */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Resaltar fila al pasar el mouse */
+}
+
+a {
+    color: black; /* Color negro para enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+footer {
+    text-align: center; /* Centrar texto del pie de página */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    table {
+        display: block; /* Convertir tabla a un bloque para scroll horizontal */
+        overflow-x: auto; /* Habilitar scroll horizontal */
+        white-space: nowrap; /* Evitar que las celdas se rompan */
+    }
+
+    th, td {
+        display: block; /* Mostrar celdas como bloques en pantallas pequeñas */
+        text-align: right; /* Alinear texto a la derecha */
+    }
+}
